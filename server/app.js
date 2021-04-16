@@ -7,6 +7,8 @@ const logger = require("morgan");
 const indexRouter = require("./routes/index");
 const pingRouter = require("./routes/ping");
 
+const mongoose = require('mongoose');
+
 const { json, urlencoded } = express;
 
 const app = express();
@@ -34,6 +36,14 @@ app.use(function(err, req, res, next) {
   // render the error page
   res.status(err.status || 500);
   res.json({ error: err });
+});
+
+// database connection
+const dbUrl = process.env.MONGODB_URI;
+mongoose.connect(dbUrl, {
+  useNewUrlParser: true, 
+  useUnifiedTopology: true,
+  useCreateIndex: true
 });
 
 module.exports = app;
