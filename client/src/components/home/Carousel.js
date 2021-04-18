@@ -77,13 +77,13 @@ export const HomeCarousel = (props) => {
                     <img src={slide.image} className={classes.img} alt='img' />
                     <div className={classes.legend}>
                         <Typography color='primary' className={classes.legendHeaderSmall}>
-                            Fresh Flower
+                            {slide.headerSmall}
                         </Typography>
                         <Typography color='primary' className={classes.legendHeaderLarge}>
-                            BESPOKE FLOWER ARRANGEMENT
+                            {slide.headerLarge}
                         </Typography>
                         <Button variant="contained" color="primary" disableElevation>
-                            VIEW MORE
+                            {slide.buttonText}
                         </Button>
                     </div>
                 </div>

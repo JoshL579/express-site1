@@ -23,7 +23,7 @@ import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 const useStyles = makeStyles((theme) => ({
     root: {
         backgroundColor: theme.palette.primary.main,
-        padding: '15px 0'
+        padding: '10px 0'
     },
     iconButton: {
         position: 'absolute',
@@ -44,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
         textTransform: 'uppercase',
         fontSize: 22,
         letterSpacing: 4.4,
-        margin: '16px 0 80px 0'
+        margin: '16px 0 70px 0'
     },
     headerTextSmall: {
         textTransform: 'uppercase',
