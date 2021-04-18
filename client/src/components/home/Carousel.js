@@ -10,6 +10,52 @@ const useStyles = makeStyles((theme) => ({
         '& .control-dots': {
             textAlign: 'right!important',
             padding: '20px 30px!important'
+        },
+        '& .animated': {
+            transition: 'all 0.5s 0s step-start!important'
+        },
+        '& .selected': {
+            animation: `$fadein 2.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both`,
+            '& p,button': {
+                '-webkit-animation': `$slide-in-bottom 1.2s linear 0.3s both`,
+                animation: `$slide-in-bottom 1.2s linear 0.3s both`
+            }
+        },
+    },
+    '@keyframes fadein': {
+        '0%': {
+            opacity: 0
+        },
+        '100%': {
+            opacity: 1
+        }
+    },
+    '@-webkit-keyframes slide-in-bottom': {
+        '0%': {
+            '-webkit-transform': 'translateY(300px)',
+            transform: 'translateY(300px)',
+            opacity: 0.5,
+            margin: '50px 0'
+        },
+        '100%': {
+            '-webkit-transform': 'translateY(0)',
+            transform: 'translateY(0)',
+            opacity: 1,
+            margin: '14px 0'
+        }
+    },
+    '@keyframes slide-in-bottom': {
+        '0%': {
+            '-webkit-transform': 'translateY(300px)',
+            transform: 'translateY(300px)',
+            opacity: 0.5,
+            margin: '50px 0'
+        },
+        '100%': {
+            '-webkit-transform': 'translateY(0)',
+            transform: 'translateY(0)',
+            opacity: 1,
+            margin: '14px 0'
         }
     },
     img: {
@@ -28,13 +74,13 @@ const useStyles = makeStyles((theme) => ({
         textTransform: 'uppercase',
         fontSize: 22,
         letterSpacing: 4.4,
-        margin: '16px 0'
+        margin: '14px 0'
     },
     legendHeaderSmall: {
         textTransform: 'uppercase',
         fontSize: 12,
         letterSpacing: 2.4,
-        margin: '12px 0',
+        margin: '14px 0',
         fontWeight: 300
     },
 }))
@@ -48,7 +94,7 @@ export const HomeCarousel = (props) => {
             headerSmall: 'Fresh Flower',
             buttonText: 'VIEW MORE'
         },
-        { 
+        {
             image: 'https://cdn.shopify.com/s/files/1/0519/0542/9670/files/Bespoke_Flower_Arrangement_1200x.jpg',
             headerLarge: 'The Bouquet of Stories',
             headerSmall: 'Faux Flower',
