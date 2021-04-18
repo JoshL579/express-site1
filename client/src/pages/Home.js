@@ -4,6 +4,7 @@ import ScrollToColor from '../utils/ScrollToColor';
 import { Grid, Typography } from '@material-ui/core';
 import { HomeCarousel } from '../components/home/Carousel';
 import { StorySlide } from '../components/home/StorySlide';
+import { AdLabel } from '../components/home/AdLabel';
 import useWindowDimensions from '../utils/resize';
 
 
@@ -18,8 +19,7 @@ const useStyles = makeStyles((theme) => ({
         letterSpacing: 2.2,
         fontSize: 12,
         padding: 6
-    },
-    
+    }
 }))
 
 export default function Home() {    
@@ -41,6 +41,7 @@ export default function Home() {
                 </ScrollToColor>
                 <HomeCarousel height={height} />
                 <StorySlide />
+                <AdLabel />
             </Grid>            
         </>
     )

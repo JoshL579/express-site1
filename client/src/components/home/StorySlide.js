@@ -1,13 +1,9 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import {
-    AppBar,
-    Toolbar,
     IconButton,
     Typography,
-    Link,
     Grid,
-    SvgIcon,
     Button
 } from '@material-ui/core';
 import { theme } from '../../themes/theme';
@@ -233,7 +229,7 @@ export const StorySlide = () => {
                         </Grid>
                         <Grid item container className={classes.slideContainer}>
                             {slides.map((slide, index) => {
-                                if (index / 4 >= 1) {
+                                if (index / 4 >= 1 && index / 4 <= 2) {
                                     return (
                                         <HomeSlideCard
                                             key={slide.id}
