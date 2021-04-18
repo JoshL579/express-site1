@@ -1,8 +1,9 @@
 import { makeStyles } from '@material-ui/core/styles';
-import Header from '../components/Header';
+import Header from '../components/home/Header';
 import ScrollToColor from '../utils/ScrollToColor';
 import { Grid, Typography } from '@material-ui/core';
-import { HomeCarousel } from '../components/Carousel';
+import { HomeCarousel } from '../components/home/Carousel';
+import { StorySlide } from '../components/home/StorySlide';
 import useWindowDimensions from '../utils/resize';
 
 
@@ -39,7 +40,8 @@ export default function Home() {
                     <Header />
                 </ScrollToColor>
                 <HomeCarousel height={height} />
-            </Grid>
+                <StorySlide />
+            </Grid>            
         </>
     )
 }

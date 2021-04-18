@@ -1,5 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
-import { theme } from '../themes/theme';
+import { theme } from '../../themes/theme';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Button, Typography } from '@material-ui/core';
@@ -8,8 +8,8 @@ import { Button, Typography } from '@material-ui/core';
 const useStyles = makeStyles((theme) => ({
     root: {
         '& .control-dots': {
-            textAlign: 'right',
-            padding: '20px 30px'
+            textAlign: 'right!important',
+            padding: '20px 30px!important'
         }
     },
     img: {

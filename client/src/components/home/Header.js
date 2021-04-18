@@ -9,9 +9,7 @@ import {
     Grid,
     SvgIcon
 } from '@material-ui/core';
-import MenuIcon from '@material-ui/icons/Menu';
-import { theme } from '../themes/theme';
-import { UserIcon } from '../utils/Icons';
+import { theme } from '../../themes/theme';
 import SearchIcon from '@material-ui/icons/Search';
 import LocalMallOutlinedIcon from '@material-ui/icons/LocalMallOutlined';
 import PermIdentityOutlinedIcon from '@material-ui/icons/PermIdentityOutlined';
