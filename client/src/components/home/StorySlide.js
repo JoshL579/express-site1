@@ -12,8 +12,6 @@ import {
 } from '@material-ui/core';
 import { theme } from '../../themes/theme';
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
-// import Swiper from 'swiper/bundle';
-// import 'swiper/swiper-bundle.css';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
@@ -119,49 +117,49 @@ export const StorySlide = () => {
         {
             id: 1,
             image: 'https://cdn.shopify.com/s/files/1/0519/0542/9670/products/O1CN01910MFF24nHMaEjHg1__159877435_400x.jpg',
-            headerText: 'BESPOKE FLOWER ARRANGEMENT',
+            headerText: 'You are my sunshine',
             buttonText: 'VIEW MORE'
         },
         {
             id: 2,
             image: 'https://cdn.shopify.com/s/files/1/0519/0542/9670/products/O1CN01lx70ZW24nHKsrpWI1__159877435_400x.jpg',
-            headerText: 'The Bouquet of Stories',
+            headerText: 'Garden Of Sunshine',
             buttonText: 'SHOP NOW'
         },
         {
             id: 3,
             image: 'https://cdn.shopify.com/s/files/1/0519/0542/9670/products/O1CN01RL5YLr24nHJhUzQxd__159877435_400x.jpg',
-            headerText: 'The Bouquet of Stories',
+            headerText: 'Endless Lovelies Bouquet',
             buttonText: 'SHOP NOW'
         },
         {
             id: 4,
             image: 'https://cdn.shopify.com/s/files/1/0519/0542/9670/products/O1CN01a2P5252Cf3Awg9mJq__202448500_400x.jpg',
-            headerText: 'The Bouquet of Stories',
+            headerText: 'One Fine Day',
             buttonText: 'SHOP NOW'
         },
         {
             id: 5,
             image: 'https://cdn.shopify.com/s/files/1/0519/0542/9670/products/O1CN01hCGqmG24nHIHyLRKV__159877435_400x.jpg',
-            headerText: 'BESPOKE FLOWER ARRANGEMENT',
+            headerText: 'Flourishing Beauty',
             buttonText: 'VIEW MORE'
         },
         {
             id: 6,
             image: 'https://cdn.shopify.com/s/files/1/0519/0542/9670/products/O1CN01EC2iro24nHF6n6EZo__159877435_400x.jpg',
-            headerText: 'The Bouquet of Stories',
+            headerText: 'Meant To Be',
             buttonText: 'SHOP NOW'
         },
         {
             id: 7,
             image: 'https://cdn.shopify.com/s/files/1/0519/0542/9670/products/TB2HGEjmAZmBKNjSZPiXXXFNVXa__159877435_400x.jpg',
-            headerText: 'The Bouquet of Stories',
+            headerText: 'Desert Sunrise',
             buttonText: 'SHOP NOW'
         },
         {
             id: 8,
             image: 'https://cdn.shopify.com/s/files/1/0519/0542/9670/products/O1CN01Klqx8s24nHJeJnSt9__159877435_400x.jpg',
-            headerText: 'The Bouquet of Stories',
+            headerText: 'Amethyst Mood',
             buttonText: 'SHOP NOW'
         },
     ];
