@@ -8,8 +8,8 @@ import useWindowDimensions from '../utils/resize';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        '& .slider': {
-            top: -66,
+        '& .carousel-root': {
+            marginTop: -66,
         },
     },
     headBadge: {
@@ -38,7 +38,7 @@ export default function Home() {
                 <ScrollToColor>
                     <Header />
                 </ScrollToColor>
-                <HomeCarousel height={height} style={{height: height}} />
+                <HomeCarousel height={height} />
             </Grid>
         </>
     )
