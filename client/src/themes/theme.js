@@ -14,14 +14,26 @@ export const theme = createMuiTheme({
     body1: {
       fontWeight:500,
       fontSize:17
-    }
+    },
 
   },
+
+  overrides: {
+    MuiButton: {
+      root: {
+        borderRadius: 0,
+        fontSize: 12,
+        letterSpacing: 2.4,
+        padding: '14px 28px'
+      },
+    },
+  },
+
   palette: {
     primary: {
-      // light: 这将从 palette.primary.main 中进行计算，
+      light: '#f8ebee',
       main: '#f8ebee',
-      // dark: 这将从 palette.primary.main 中进行计算，
+      dark: '#f8ebee',
       // contrastText: 这将计算与 palette.primary.main 的对比度
     },
     secondary: {
