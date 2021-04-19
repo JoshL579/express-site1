@@ -7,6 +7,7 @@ import { StorySlide } from '../components/home/StorySlide';
 import { AdLabel } from '../components/home/AdLabel';
 import { Arrangement } from '../components/home/Arrangement';
 import { CommentSlide } from '../components/home/CommentSlide';
+import { Footer } from '../components/Footer';
 import useWindowDimensions from '../utils/resize';
 
 
@@ -46,6 +47,7 @@ export default function Home() {
                 <AdLabel />
                 <Arrangement />
                 <CommentSlide />
+                <Footer />
             </Grid>            
         </>
     )
