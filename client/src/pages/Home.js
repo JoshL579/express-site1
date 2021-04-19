@@ -1,11 +1,12 @@
 import { makeStyles } from '@material-ui/core/styles';
-import Header from '../components/home/Header';
+import Header from '../components/Header';
 import ScrollToColor from '../utils/ScrollToColor';
 import { Grid, Typography } from '@material-ui/core';
 import { HomeCarousel } from '../components/home/Carousel';
 import { StorySlide } from '../components/home/StorySlide';
 import { AdLabel } from '../components/home/AdLabel';
 import { Arrangement } from '../components/home/Arrangement';
+import { CommentSlide } from '../components/home/CommentSlide';
 import useWindowDimensions from '../utils/resize';
 
 
@@ -44,6 +45,7 @@ export default function Home() {
                 <StorySlide />
                 <AdLabel />
                 <Arrangement />
+                <CommentSlide />
             </Grid>            
         </>
     )

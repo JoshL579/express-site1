@@ -9,6 +9,9 @@ const useStyles = makeStyles((theme) => ({
         background: theme.palette.primary.main,
         padding: 80
     },
+    brandName: {
+        marginBottom: 20
+    },
     intro: {
         marginTop: 30
     },
@@ -29,6 +32,9 @@ const useStyles = makeStyles((theme) => ({
     bottomDescription: {
         marginTop: 80,
         maxWidth: 800
+    },
+    intro2: {
+        margin: '30px 0'
     },
     bottomBtn: {
         marginTop: 50
@@ -96,7 +102,7 @@ export const Arrangement = () => {
                     <img src="https://cdn.shopify.com/s/files/1/0519/0542/9670/products/2_400x.jpg" alt="" />
                 </Grid>
                 <Grid item md={5}>
-                    <Typography variant='overline'>
+                    <Typography variant='overline' component='p' className={classes.brandName}>
                         MS LULU DIARY
                     </Typography>
                     <Typography variant='h6'>
@@ -151,7 +157,7 @@ export const Arrangement = () => {
                     # After reading other people's stories, do you
                     have any stories want to share with us?
                 </Typography>
-                <Typography variant='body2'>
+                <Typography variant='body2' className={classes.intro2}>
                     Tell us your story in the blank box, we will create a
                     bouquet of flowers only for your story.
                     Please write down your story, indicating your favorite

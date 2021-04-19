@@ -19,7 +19,6 @@ export const theme = createMuiTheme({
       textTransform: 'uppercase',
       fontSize: 12,
       letterSpacing: 2.4,
-      marginBottom: 20,
       fontWeight: 300
     },
     body1: {
@@ -45,6 +44,13 @@ export const theme = createMuiTheme({
         padding: '14px 28px'
       },
     },
+    MuiTextField: {
+      root: {
+        '& fieldset': {
+          borderRadius: 0
+        }
+      }
+    }
   },
 
   palette: {
