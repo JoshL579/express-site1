@@ -1,10 +1,18 @@
-# Express Starter
+# MS LULU DIARY (Flower Shop website)
 
-This starter repo will be used for building applications using React, Material-UI, React-Router, Node, & Express.js.
+## Contributors
 
-## Getting started
+[Josh Liu](https://github.com/bugatti12345)
 
-The project is broken down into a client and server folder.
+## About
 
-## Preview (In Process...)
-![image](https://user-images.githubusercontent.com/70559690/115145044-97154900-a004-11eb-9223-d6010a08eab3.png)
+Building up based on the mockups of [MS LULU DIARY](https://msluludiary.com): a shopify flower shop website which allow users to look up flower in stock and purchase online, leave their stories, comments and browse stories.
+
+## Stacks/Technologies
+- Front-End: ReactJs, Material UI, React-Responsive-Carousel
+- Back-End: ExpressJs, MongoDB
+- Sevices: ...
+
+## Preview (In Working Process...)
+- #### finished homepage 
+![image](source/demo/homepage.gif)
