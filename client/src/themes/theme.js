@@ -3,19 +3,37 @@ import { createMuiTheme } from '@material-ui/core/styles';
 export const theme = createMuiTheme({
   typography: {
     fontFamily: "DIN Neuzeit Grotesk",
-
-    // h5 used for homepage title
     h5: {
-        fontWeight:500,
-        fontSize:30
+      textTransform: 'uppercase',
+      fontSize: 22,
+      letterSpacing: 4.4,
+      marginBottom: 20
     },
-
-    // body1 used in upgrade page card subtitle
+    h6: {
+      textTransform: 'uppercase',
+      fontSize: 18,
+      letterSpacing: 4.4,
+      marginBottom: 20
+    },
+    overline: {
+      textTransform: 'uppercase',
+      fontSize: 12,
+      letterSpacing: 2.4,
+      marginBottom: 20,
+      fontWeight: 300
+    },
     body1: {
-      fontWeight:500,
-      fontSize:17
+      fontWeight: 500,
+      fontSize: 17
     },
-
+    body2: {
+      fontWeight: 300,
+      fontSize: 14
+    },
+    subtitle2: {
+      fontWeight: 700,
+      fontSize: 14
+    }
   },
 
   overrides: {

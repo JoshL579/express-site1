@@ -15,11 +15,13 @@ const useStyles = makeStyles((theme) => ({
             opacity: 0.8
         },
         '& h6': {
+            textTransform: 'none',
             fontSize: 20,
             fontStyle: 'italic',
             fontWeight: 700,
             textAlign: 'center',
-            color: theme.palette.darkgreen.main
+            color: theme.palette.darkgreen.main,
+            letterSpacing: 0
         },
         borderTop: '1px solid #d5d0d2',
         borderBottom: '1px solid #d5d0d2',

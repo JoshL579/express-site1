@@ -5,6 +5,7 @@ import { Grid, Typography } from '@material-ui/core';
 import { HomeCarousel } from '../components/home/Carousel';
 import { StorySlide } from '../components/home/StorySlide';
 import { AdLabel } from '../components/home/AdLabel';
+import { Arrangement } from '../components/home/Arrangement';
 import useWindowDimensions from '../utils/resize';
 
 
@@ -42,6 +43,7 @@ export default function Home() {
                 <HomeCarousel height={height} />
                 <StorySlide />
                 <AdLabel />
+                <Arrangement />
             </Grid>            
         </>
     )
