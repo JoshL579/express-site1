@@ -5,6 +5,7 @@ import { theme } from "./themes/theme";
 import LandingPage from "./pages/Landing";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
+import About from "./pages/About";
 
 import "./App.css";
 
@@ -14,6 +15,7 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route path="/login" component={Login} />
+          <Route path="/about" component={About} />
           <Route path="/" component={Home} />
         </Switch>
       </BrowserRouter>

@@ -82,7 +82,7 @@ export default function Header(props) {
                         <NavLink text='Home' to="/" />
                         <NavLink text='Story Bouquet (Faux Flower)' />
                         <NavLink text='Bespoke Flower Arrangement' />
-                        <NavLink text='About Us' />
+                        <NavLink text='About Us' to="/about" />
                     </Grid>
                     <Grid item className={classes.navRightIcons}>
                         <IconButton onClick={() => { history.push('/login') }}>
