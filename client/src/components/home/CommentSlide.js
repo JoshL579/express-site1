@@ -288,7 +288,7 @@ export const CommentSlide = () => {
                 </Carousel>
             </Grid>
             <Grid item container md={6} className={classes.root}>
-                <EmailSection></EmailSection>
+                <EmailSection />
             </Grid>
         </Grid>
     )

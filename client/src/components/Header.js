@@ -1,4 +1,5 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles';
 import {
     AppBar,
@@ -16,10 +17,17 @@ import PermIdentityOutlinedIcon from '@material-ui/icons/PermIdentityOutlined';
 
 
 const useStyles = makeStyles((theme) => ({
+    headBadge: {
+        backgroundColor: theme.palette.primary.main,
+        letterSpacing: 2.2,
+        fontSize: 12,
+        padding: 6
+    },
     container: {
         border: 'none',
         boxShadow: 'none',
-        height: 66
+        height: 66,
+        backgroundColor: '#ffffff'
     },
     navlink: {
         margin: '6px 21px',
@@ -40,10 +48,11 @@ const useStyles = makeStyles((theme) => ({
 
 const NavLink = (props) => {
     const classes = useStyles();
-    const preventDefault = (event) => event.preventDefault();
+    //const preventDefault = (event) => event.preventDefault();
     return (
-        <Link href="#"
-            onClick={preventDefault}
+        <Link
+            href={props.to ? props.to : '#'}
+            //onClick={preventDefault}
             color='secondary'
             variant="body2"
             className={classes.navlink}
@@ -55,6 +64,7 @@ const NavLink = (props) => {
 
 export default function Header(props) {
     const classes = useStyles();
+    const history = useHistory();
     return (
         <AppBar position="sticky" style={props.style}
             className={classes.container}>
@@ -69,13 +79,13 @@ export default function Header(props) {
                         </IconButton>
                     </Grid>
                     <Grid item>
-                        <NavLink text='Home' />
+                        <NavLink text='Home' to="/" />
                         <NavLink text='Story Bouquet (Faux Flower)' />
                         <NavLink text='Bespoke Flower Arrangement' />
                         <NavLink text='About Us' />
                     </Grid>
                     <Grid item className={classes.navRightIcons}>
-                        <IconButton>
+                        <IconButton onClick={() => { history.push('/login') }}>
                             <PermIdentityOutlinedIcon />
                         </IconButton>
                         <IconButton>
@@ -88,5 +98,19 @@ export default function Header(props) {
                 </Grid>
             </Toolbar>
         </AppBar>
+    )
+}
+
+export const PromotionBanner = () => {
+    const classes = useStyles();
+    return (
+        <Grid container justify="center"
+            alignItems="center"
+            direction='row'
+            className={classes.headBadge} >
+            <Typography variant="overline" color='secondary'>
+                FREE SHIPPING ON ORDERS OVER $140 CAD
+            </Typography>
+        </Grid>
     )
 }

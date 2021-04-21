@@ -1,5 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
-import Header from '../components/Header';
+import Header, { PromotionBanner } from '../components/Header';
 import ScrollToColor from '../utils/ScrollToColor';
 import { Grid, Typography } from '@material-ui/core';
 import { HomeCarousel } from '../components/home/Carousel';
@@ -16,28 +16,15 @@ const useStyles = makeStyles((theme) => ({
         '& .carousel-root': {
             marginTop: -66,
         },
-    },
-    headBadge: {
-        backgroundColor: theme.palette.primary.main,
-        letterSpacing: 2.2,
-        fontSize: 12,
-        padding: 6
-    }
+    },    
 }))
 
-export default function Home() {    
+export default function Home() {
     const { height, width } = useWindowDimensions();
     const classes = useStyles();
     return (
         <>
-            <Grid container justify="center"
-                alignItems="center"
-                direction='row'
-                className={classes.headBadge} >
-                <Typography variant="overline" color='secondary'>
-                    FREE SHIPPING ON ORDERS OVER $140 CAD
-                </Typography>
-            </Grid>
+            <PromotionBanner />
             <Grid container className={classes.root}>
                 <ScrollToColor>
                     <Header />
@@ -48,7 +35,7 @@ export default function Home() {
                 <Arrangement />
                 <CommentSlide />
                 <Footer />
-            </Grid>            
+            </Grid>
         </>
     )
 }
