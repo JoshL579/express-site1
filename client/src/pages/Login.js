@@ -54,8 +54,8 @@ export default function Login() {
             <Grid item container direction='column' alignItems='center'
                 className={classes.container}
                 style={{
-                    marginTop: (height - 455) / 2,
-                    marginBottom: (height - 455) / 2
+                    marginTop: (height - 475) / 2,
+                    marginBottom: (height - 435) / 2
                 }}
             >
                 <Typography variant='h5' color='secondary'>
